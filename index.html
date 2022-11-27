@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7e0fee57a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Portfólio - Emanuel</title>
+</head>
+<body onresize="menu()">
+    <header class="header">
+        <nav class="menu-container">
+
+            <div class="menu-logo">
+                Emanuel
+            </div>
+
+            <ul class="menu-lista">
+                <li>
+                    <a href="#">Experiência</a>
+                </li>
+
+                <li>
+                    <a href="#">Formação</a>
+                </li>
+
+                <li>
+                    <a href="#">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+
+            <div class="menu-responsivo" onmouseup="fechar_menu2()">
+                <ul class="menu-responsivo-lista">
+                    <li>
+                        <a href="#">Experiência</a>
+                    </li>
+                    <li>
+                        <a href="#">Formação</a>
+                    </li>
+                    <li>
+                        <a href="#">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+
+                <img src="images/xmark-solid.svg" alt="Fechar" class="menu-responsivo-fechar" onclick="fechar_menu()">
+            </div>
+
+            <div class="menu-box">
+                <a href="#">Fale comigo</a>
+            </div>
+
+            <img src="images/bars-solid.svg" alt="Menu" class="menu-hamburg" onclick="abrir_menu()">
+
+        </nav>
+    </header>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

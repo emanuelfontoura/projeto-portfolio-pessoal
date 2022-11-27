@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.header{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: #181818;
+}
+
+.menu-lista{
+    display: flex;
+    gap: 50px;
+}
+
+.menu-lista, .menu-box{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.menu-lista li a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.menu-lista li a:hover::after{
+    width: 40px;
+}
+
+.menu-box{
+    border: solid 1px #55E7A5;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.menu-box, .menu-box a{
+    transition: 0.3s;
+}
+
+.menu-box:hover{
+    background-color: white;
+    border: solid 1px white;
+}
+
+.menu-box:hover a{
+    color: black;
+}
+
+.menu-logo{
+    color: #55E7A5;
+    font-weight: 600;
+    font-size: 3rem;
+    position: relative;
+}
+
+.menu-logo::after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #55E7A5;
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    right: -10px;
+    bottom: 17px;
+}
+
+.menu-responsivo, .menu-hamburg{
+    display: none;
+}
+
+@media (max-width: 1170px){
+    .menu-container{
+        padding: 20px 40px;
+    }
+
+    .menu-lista{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 900px){
+    .menu-logo{
+        font-size: 2.3rem;
+    }
+
+    .menu-logo::after{
+        bottom: 13px;
+    }
+
+    .menu-box{
+        padding: 10px 20px;
+    }
+
+    .menu-box a{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 820px){
+    .menu-lista, .menu-box{
+        display: none;
+    }
+
+    .menu-hamburg{
+        display: block;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .menu-hamburg:hover{
+        animation: shake .2s ease-in-out 0s 1;
+    }
+
+    @keyframes shake{
+        0%{transform: translateX(0rem);}
+        25%{transform: translateX(-0.3rem);}
+        75%{transform: translateX(0.3rem);}
+        100%{transform: translateX(0rem);}
+    }
+
+    .menu-responsivo{
+        padding: 100px;
+        right: 0;
+        top: 0;
+        background-color: #181818;
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .menu-responsivo-fechar{
+        max-width: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        margin: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menu-responsivo-fechar:hover{
+        transform: rotate(180deg);
+    }
+
+    .menu-responsivo-lista{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .menu-responsivo-lista li a{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .menu-responsivo-lista li a::after{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0px;
+        background-color: white;
+        position: absolute;
+        transition: 0.3s;
+    }
+    
+    .menu-responsivo-lista li a:hover::after{
+        width: 40px;
+    }
+
+    .menu-container{
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 380px){
+    .menu-container{
+        padding: 15px 20px;
+    }
+
+    .menu-hamburg{
+        width: 30px;
+    }
+
+    .menu-logo{
+        font-size: 1.9rem;
+    }
+
+    .menu-logo::after{
+        bottom: 11px;
+    }
+}
