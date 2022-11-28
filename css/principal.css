@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+.principal{
+    display: flex;
+    padding: 110px 180px;
+    gap: 80px;
+    font-family: 'Rajdhani', sans-serif;
+    justify-content: center;
+    background-color: #F0F0F0;
+}
+
+.card-container{
+    border: solid 1px black;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bg{
+    padding: 0px 0px 20px 20px;
+    background-image: url(../images/pattern.svg);
+    background-repeat: no-repeat;
+    background-position: left 3px bottom 3px;
+}
+
+.card-topo{
+    padding: 15px 30px;
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-topo span{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.card-titulo{
+    padding: 15px 30px 0px 30px;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-texto{
+    font-size: 1.375rem;
+    font-weight: 500;
+    padding: 15px 30px;
+}
+
+.card-rodape{
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px black;
+}
+
+.card-rodape span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-container a{
+    color: black;
+}
+
+.card-container a div{
+    position: relative;
+    z-index: 1;
+}
+
+.card-container a div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, #45c58c 50%, #55E7A5 100%);
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.card-container a div:hover::before{
+    opacity: 1;
+}
+
+.imagem-x{
+    margin-left: 150px;
+}
+
+@media (max-width: 1660px){
+    .imagem-x{
+        width: 500px;
+    }
+
+    .principal{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1450px){
+    .imagem-x{
+        width: 350px;
+    }
+
+    .principal{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1280px){
+    .imagem-x{
+        display: none;
+    }
+}
+
+@media (max-width: 750px){
+    .principal{
+        padding: 90px 100px;
+    }
+}
+
+@media (max-width: 614px){
+    .principal{
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 500px){
+    .card-topo img{
+        display: none;
+    }
+
+    .card-titulo{
+        font-size: 1.5rem;
+    }
+
+    .card-texto{
+        font-size: 1.15rem;
+    }
+
+    .card-rodape span{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 400px){
+    .card-topo{
+        display: none;
+    }
+}
+
+@media (max-width: 402px){
+    .principal{
+        padding: 20px 40px;
+    }
+
+    .card-titulo{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .card-texto{
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .card-rodape span{
+        font-size: 1rem;
+    }
+
+    .card-rodape{
+        padding: 10px 20px;
+    }
+
+    .bg{
+        background-image: none;
+        padding: 0;
+    }
+
+    .card-rodape img{
+        width: 45px;
+    }
+}
+
+@media (max-width: 270px){
+    .principal{
+        padding: 15px 20px;
+    }
+
+    .card-rodape img{
+        display: none;
+    }
+
+    .card-rodape{
+        justify-content: center;
+    }
+
+    .card-texto{
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .card-titulo{
+        font-size: 1rem;
+        padding: 10px 20px 5px 20px;
+    }
+
+    .card-rodape span{
+        font-size: 0.9rem;
+    }
+}

@@ -1,5 +1,7 @@
 var menu_responsivo = window.document.querySelector('.menu-responsivo')
 
+var principal = window.document.querySelector('.principal')
+
 function abrir_menu(){
     if (menu_responsivo.style.display == "none"){
         menu_responsivo.style.display = "flex"
