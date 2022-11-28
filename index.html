@@ -10,7 +10,9 @@
     <title>Portfólio - Emanuel</title>
 </head>
 <body onresize="menu()">
-    <header class="header">
+    <a href="#header"><img src="images/arrow-up-solid (1).svg" alt="Topo" class="voltar-topo"></a>
+
+    <header class="header" id="header">
         <nav class="menu-container">
 
             <div class="menu-logo">
@@ -19,7 +21,7 @@
 
             <ul class="menu-lista">
                 <li>
-                    <a href="#">Experiência</a>
+                    <a href="#experiencia">Experiência</a>
                 </li>
 
                 <li>
@@ -38,7 +40,7 @@
             <div class="menu-responsivo" onmouseup="fechar_menu2()">
                 <ul class="menu-responsivo-lista">
                     <li>
-                        <a href="#">Experiência</a>
+                        <a href="#experiencia">Experiência</a>
                     </li>
                     <li>
                         <a href="#">Formação</a>
@@ -85,6 +87,40 @@
         <img src="images/X.svg" alt="#" class="imagem-x">
 
     </main>
+
+    <section class="experiencia" id="experiencia">
+        <h1 class="exp-titulo">experiência</h1>
+
+        <div class="experiencia-container">
+            
+            <div class="bg2 exp1">
+                <div class="card-container">
+                    <div class="card-topo">
+                        <span>Agosto/2021 - Maio/2022</span>
+                        <img src="images/circulos.svg" alt="#">
+                    </div>
+                    <h1 class="card-titulo">César de Azevedo Lopes e Advogados Associados</h1>
+                    <p class="card-texto">Atender e receber clientes, organizar documentos, escrever notificações de cobrança e petições iniciais, realizar atualizações monetárias de FGTS, entre outras atividades de suporte.</p>
+            
+                    <img src="images/advogados1.svg" alt="César de Azevedo Lopes e Advogados Associados" class="card-foto1">
+                </div>
+            </div>
+
+            <div class="bg2 exp2">
+                <div class="card-container">
+                    <div class="card-topo">
+                        <span>Junho/2022 - Atualmente</span>
+                        <img src="images/circulos.svg" alt="#">
+                    </div>
+                    <h1 class="card-titulo">Stringhini Varejo Inteligente - Rio Grande do Sul</h1>
+                    <p class="card-texto">Homologação e revisão de fotos dentro do sistema para a empresa, treinamento do sistema, preenchimento de dados sobre produtos e solicitações de cadastro.
+                    </p>
+            
+                    <img src="images/stringhini2.svg" alt="César de Azevedo Lopes e Advogados Associados" class="card-foto2">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/headerjs.js"></script>
 </body>
