@@ -23,6 +23,16 @@
 
 .exp1{
     justify-self: right;
+    transition: 0.1s;
+}
+
+.exp2{
+    transition: 0.1s;
+    justify-self: left;
+}
+
+.exp1:hover, .exp2:hover{
+    transform: scale(1.075);
 }
 
 .bg2{
