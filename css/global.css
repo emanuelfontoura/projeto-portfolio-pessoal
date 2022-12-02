@@ -27,12 +27,21 @@ ul{
     transform: translate3d(100px, 0px, 0px);
 }
 
+[data-anime="left"]{
+    transform: translate3d(-50px, 0px, 0px);
+}
+
 [data-anime].animate{
-    opacity: 0.2;
+    opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
 
-.voltar-topo{
+[data-anime="right"]:hover{
+    opacity: 1;
+    transform: scale(1.1) rotate(360deg);
+}
+
+.voltar-topo-oculto{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -42,12 +51,18 @@ ul{
     background-color: #55E7A5;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0.6 !important;
     transition: 0.3s;
+    opacity: 0;
     scale: 0.95;
+    transform: translate3d(100px, 0px, 0px);
 }
 
-[data-anime="right"]:hover{
-    opacity: 1 !important;
-    transform: scale(1.1) rotate(360deg);
+.voltar-topo-oculto:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.voltar-topo-mostrar{
+    opacity: 0.6;
+    transform: translate3d(0px, 0px, 0px);
 }
