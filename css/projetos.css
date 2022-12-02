@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.projetos{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.projetos-titulo{
+    font-size: 8.75rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    transition: 1s;
+    color: #3D3D3D;
+}

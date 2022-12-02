@@ -67,7 +67,7 @@
 
     <main class="principal">
 
-        <div class="bg ocultar">
+        <div class="bg">
             <div class="card-container">
                 <div class="card-topo">
                     <span>Desenvolvedor Front-End</span>
@@ -84,12 +84,20 @@
             </div>
         </div>
 
-        <img src="images/X.svg" alt="#" class="imagem-x mostrar">
+        <div class="icons">
+            <div class="icon-container">
+                <img src="images/html5.svg" alt="HTML5" class="icon-imagem">
+            </div>
+
+            <div>
+                <img src="images/css3-alt.svg" alt="CSS3" class="icon-imagem">
+            </div>
+        </div>
 
     </main>
 
     <section class="experiencia" id="experiencia">
-        <h1 class="exp-titulo">experiência</h1>
+        <h1 class="experiencia-titulo" data-anime="top">experiência</h1>
 
         <div class="experiencia-container">
             
@@ -106,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="bg2 exp2">
+            <div class="bg2 exp2" data-anime="right">
                 <div class="card-container">
                     <div class="card-topo">
                         <span>Junho/2022 - Atualmente</span>
@@ -122,7 +130,11 @@
         </div>
     </section>
 
-    <script src="js/headerjs.js"></script>
-    <script src="js/top.js"></script>
+    <section class="projetos">
+        <h1 class="projetos-titulo" data-anime="top">projetos</h1>
+    </section>
+
+    <script src="js/responsivemenu.js"></script>
+    <script src="js/animate.js"></script>
 </body>
 </html>

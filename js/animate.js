@@ -12,7 +12,7 @@ const animeVoltarTopo = () => {
 const animeScroll = () => {
 
     item.forEach(element =>{
-        const windowTop = window.scrollY + window.innerHeight * 1.5
+        const windowTop = window.scrollY - 200
 
         if (windowTop > element.scrollTop){
             element.classList.add('animate')
