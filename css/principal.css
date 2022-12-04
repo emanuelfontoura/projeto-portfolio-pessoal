@@ -1,237 +1,359 @@
 @charset "UTF-8";
 
-.principal{
+.principal-container{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    padding: 180px 180px;
+    padding: 180px 170px;
     font-family: 'Rajdhani', sans-serif;
-    background-color: #F0F0F0;
+    background: linear-gradient(45deg, #024554, #53736A, #6A8C69, #A8B545, #C2C0A6);
+    background-size: 200% 200%;
+    animation: colors 7s ease infinite;
 }
 
-.card-container{
-    border: solid 1px black;
-    max-width: 600px;
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 100%;
+    }
+
+    75%{
+        background-position: 150% 150;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.card-container-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 450px;
     background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    -webkit-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
+    -moz-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
+    box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
 }
 
-.bg{
-    padding: 0px 0px 23px 23px;
-    background-size: cover;
-    background-image: url(../images/pattern.svg);
-    background-repeat: no-repeat;
-    background-position: left -107px bottom -27px;
-}
-
-.card-topo{
-    padding: 15px 30px;
+.card-topo-principal{
+    padding: 15px 35px;
     border-bottom: solid 1px black;
     display: flex;
     justify-content: space-between;
 }
 
-.card-topo span{
+.card-topo-principal span{
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.card-titulo{
-    padding: 15px 30px 0px 30px;
+.card-titulo-principal{
+    padding: 15px 35px 0px 30px;
     text-decoration: underline;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
-.card-texto{
+.card-texto-principal{
     font-size: 1.7rem;
     font-weight: 500;
-    padding: 15px 30px;
+    padding: 15px 35px;
 }
 
-.card-rodape{
-    padding: 15px 30px;
+.card-rodape-principal{
+    padding: 15px 35px;
     display: flex;
     justify-content: space-between;
     border-top: solid 1px black;
 }
 
-.card-rodape span{
+.card-rodape-principal span{
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.card-container a{
+.card-container-principal a{
     color: black;
 }
 
-.card-container a div{
+.card-container-principal a div{
     position: relative;
     z-index: 1;
 }
 
-.card-container a div::before{
+.card-container-principal a div::before{
     content: "";
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, #45c58c 50%, #55E7A5 100%);
+    background: linear-gradient(90deg, #f7f6f6, #d3d2d2);
     z-index: -1;
     transition: opacity 0.3s linear;
     opacity: 0;
 }
 
-.card-container a div:hover::before{
-    opacity: 1;
+.card-container-principal a div:hover::before{
+    opacity: 0.6;
 }
 
 .icons{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    flex: 1;
-    gap: 50px;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    max-width: 600px;
+    gap: 30px;
+    word-break: break-all;
 }
 
-.icon-container{
-    padding: 10px;
-    background-color: #c9c9c971;
-    border-radius: 6px;
+.icons-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    padding: 18px;
+    transition: 0.3s;
+
+    /* FUNDO TRANSPARENTE */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.041);
 }
 
-.icon-imagem2{
-    width: 60px;
-    position: absolute;
+.icon-titulo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    width: 13ch;
+    height: 5ch;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.582);
 }
 
-.icon-imagem1{
-    width: 60px;
-    opacity: 0;
-    transition: opacity .3s;
+.icons-container:hover{
+    transform: scale(1.09);
 }
 
-.icon-container:hover{
-    scale: 1.1;
+/* ICON HTML */
+
+.icon-image-html{
+    transition: 0.3s;
+    width: 70px;
+    height: 80px;
+    background-image: url(../images/html5cinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.icon-container:hover .icon-imagem1{
-    opacity: 1;
+.icons-container:hover .icon-image-html{
+    background-image: url(../images/html5.png);
 }
 
-.icon-container:hover .icon-imagem2{
-    opacity: 0;
+/* ICON CSS */
+
+.icon-image-css{
+    transition: 0.3s;
+    width: 70px;
+    height: 80px;
+    background-image: url(../images/css3cinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+.icons-container:hover .icon-image-css{
+    background-image: url(../images/css3.png);
+}
+
+/* ICON JAVASCRIPT */
+
+.icon-image-js{
+    transition: 0.3s;
+    width: 70px;
+    height: 80px;
+    background-image: url(../images/jscinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icons-container:hover .icon-image-js{
+    background-image: url(../images/js.png);
+}
+
+/* LÓGICA DE PROGRAMAÇÃO */
+
+.icon-image-lgc{
+    transition: 0.3s;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/logicacinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icons-container:hover .icon-image-lgc{
+    background-image: url(../images/logica.png);
+}
+
+/* ICON ALGORITMO */
+
+.icon-image-alg{
+    transition: 0.3s;
+    width: 70px;
+    height: 80px;
+    background-image: url(../images/binarycinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icons-container:hover .icon-image-alg{
+    background-image: url(../images/binary.png);
+}
+
+/* FIGMA */
+
+.icon-image-figma{
+    transition: 0.3s;
+    width: 70px;
+    height: 80px;
+    background-image: url(../images/figmacinza.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icons-container:hover .icon-image-figma{
+    background-image: url(../images/figma.png);
+}
+
 
 @media (max-width: 1660px){
-    .principal{
+    .principal-container{
         gap: 40px;
     }
 }
 
 @media (max-width: 1450px){
-    .principal{
+    .principal-container{
         gap: 10px;
     }
 }
 
 @media (max-width: 750px){
-    .principal{
+    .principal-container{
         padding: 90px 100px;
     }
 }
 
 @media (max-width: 614px){
-    .principal{
+    .principal-container{
         padding: 30px 50px;
     }
 }
 
 @media (max-width: 500px){
-    .card-topo img{
+    .card-topo-principal img{
         display: none;
     }
 
-    .card-titulo{
+    .card-titulo-principal{
         font-size: 1.5rem;
     }
 
-    .card-texto{
+    .card-texto-principal{
         font-size: 1.15rem;
     }
 
-    .card-rodape span{
+    .card-rodape-principal span{
         font-size: 1.25rem;
     }
 }
 
 @media (max-width: 400px){
-    .card-topo{
+    .card-topo-principal{
         display: none;
     }
 }
 
 @media (max-width: 402px){
-    .principal{
+    .principal-container{
         padding: 20px 40px;
     }
 
-    .card-titulo{
+    .card-titulo-principal{
         font-size: 1rem;
         padding: 10px 20px;
     }
 
-    .card-texto{
+    .card-texto-principal{
         font-size: 0.9rem;
         padding: 10px 20px;
     }
 
-    .card-rodape span{
+    .card-rodape-principal span{
         font-size: 1rem;
     }
 
-    .card-rodape{
+    .card-rodape-principal{
         padding: 10px 20px;
     }
 
-    .bg{
+    .bg-principal{
         background-image: none;
         padding: 0;
     }
 
-    .card-rodape img{
+    .card-rodape-principal img{
         width: 45px;
     }
 }
 
 @media (max-width: 270px){
-    .principal{
+    .principal-container{
         padding: 15px 20px;
     }
 
-    .card-rodape img{
+    .card-rodape-principal img{
         display: none;
     }
 
-    .card-rodape{
+    .card-rodape-principal{
         justify-content: center;
     }
 
-    .card-texto{
+    .card-texto-principal{
         font-size: 0.9rem;
         padding: 10px 20px;
     }
 
-    .card-titulo{
+    .card-titulo-principal{
         font-size: 1rem;
         padding: 10px 20px 5px 20px;
     }
 
-    .card-rodape span{
+    .card-rodape-principal span{
         font-size: 0.9rem;
     }
 }
