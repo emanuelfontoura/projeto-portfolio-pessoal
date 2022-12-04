@@ -3,6 +3,7 @@
 .principal-container{
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     padding: 180px 170px;
     font-family: 'Rajdhani', sans-serif;
@@ -33,8 +34,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 600px;
-    height: 450px;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     -webkit-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
@@ -248,6 +250,7 @@
     background-image: url(../images/figma.png);
 }
 
+/* REPONSIVO */
 
 @media (max-width: 1660px){
     .principal-container{
@@ -258,6 +261,14 @@
 @media (max-width: 1450px){
     .principal-container{
         gap: 10px;
+    }
+}
+
+@media(max-width: 1390px){
+    .principal-container{
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 130px 80px;
     }
 }
 
@@ -318,11 +329,6 @@
 
     .card-rodape-principal{
         padding: 10px 20px;
-    }
-
-    .bg-principal{
-        background-image: none;
-        padding: 0;
     }
 
     .card-rodape-principal img{
