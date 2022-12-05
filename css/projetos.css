@@ -5,23 +5,11 @@
 }
 
 .projetos-titulo{
-    font-size: 8.75rem;
+    font-size: clamp(2rem, 10vw + 0.1rem, 8rem);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 100px;
     transition: 1s;
     color: #3D3D3D;
-}
-
-@media (max-width: 1372px){
-    .projetos-titulo{
-        font-size: 7rem;
-    }
-}
-
-@media (max-width: 1076px){
-    .projetos-titulo{
-        font-size: 5rem;
-    }
 }

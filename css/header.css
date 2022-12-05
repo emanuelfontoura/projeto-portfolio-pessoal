@@ -135,9 +135,10 @@
         right: 0;
         top: 0;
         background-color: #000000;
-        width: 80vw;
+        width: 70vw;
         height: 100vh;
-        position: absolute;
+        z-index: 2;
+        position: fixed;
         display: flex;
         align-items: flex-start;
         justify-content: center;

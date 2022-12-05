@@ -258,11 +258,11 @@
     }
 }
 
-@media (max-width: 1450px){
+/* @media (max-width: 1450px){
     .principal-container{
         gap: 10px;
     }
-}
+} */
 
 @media(max-width: 1390px){
     .principal-container{
@@ -278,13 +278,13 @@
     }
 }
 
-@media (max-width: 614px){
+@media (max-width: 680px){
     .principal-container{
         padding: 30px 50px;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 550px){
     .card-topo-principal img{
         display: none;
     }
