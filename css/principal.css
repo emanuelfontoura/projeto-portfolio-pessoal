@@ -258,12 +258,6 @@
     }
 }
 
-/* @media (max-width: 1450px){
-    .principal-container{
-        gap: 10px;
-    }
-} */
-
 @media(max-width: 1390px){
     .principal-container{
         grid-template-columns: 1fr;
@@ -289,6 +283,16 @@
 
     .card-texto-principal{
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .icons{
+        gap: 25px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        max-width: 100%;
     }
 }
 
