@@ -280,7 +280,15 @@
 
 @media (max-width: 680px){
     .principal-container{
-        padding: 30px 50px;
+        padding: 50px 60px;
+    }
+
+    .card-titulo-principal{
+        font-size: 2rem;
+    }
+
+    .card-texto-principal{
+        font-size: 1.5rem;
     }
 }
 

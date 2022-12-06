@@ -18,9 +18,8 @@
 
 .experiencia-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 80px;
-    width: 100%;
 }
 
 .experiencia-imagem-1{
@@ -35,6 +34,7 @@
     transition: 0.3s;
     width: 100%;
     max-width: 600px;
+    min-width: 100px;
 }
 
 .experiencia-imagem-1:hover, .experiencia-imagem-2:hover{
@@ -50,4 +50,24 @@
         justify-self: center;
     }
 
+}
+
+@media (max-width: 500px){
+    .experiencia{
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 400px){
+    .experiencia{
+        padding: 30px 20px;
+    }
+
+    .experiencia-container{
+        gap: 30px;
+    }
+
+    .experiencia-titulo{
+        margin-bottom: 30px;
+    }
 }
