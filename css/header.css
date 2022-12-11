@@ -4,8 +4,6 @@
 
 .header{
     font-family: 'Rajdhani', sans-serif;
-    position: sticky;
-    top: 0px;
     z-index: 2;
 }
 

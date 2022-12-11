@@ -125,7 +125,7 @@
     align-items: center;
     justify-content: center;
     padding: 18px;
-    transition: 0.3s;
+    transition: transform 0.5s ease-in-out;
 
     /* FUNDO TRANSPARENTE */
     /* From https://css.glass */
@@ -286,13 +286,31 @@
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 610px){
+    .principal-container{
+        gap: 30px;
+    }
+
     .icons{
-        gap: 25px;
+        max-width: calc(100% + 50px);
         flex-wrap: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        max-width: 100%;
+        overflow-x: auto;
+        justify-content: initial;
+        gap: 15px;
+    }
+
+    .icons-container{
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    div[class|=icon-image]{
+        width: 30px;
+        height: 40px;
+    }
+
+    .icon-titulo{
+        font-size: 0.8rem;
     }
 }
 
