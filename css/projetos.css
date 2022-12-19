@@ -32,11 +32,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 305px;
 }
 
 .slider{
+    scale: 0;
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: scale 0.425s, opacity 0.225s;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -44,7 +46,12 @@
 }
 
 .on{
+    scale: 1;
     opacity: 1;
+}
+
+.prev-button{
+    transform: rotate(180deg);
 }
 
 .prev-button, .next-button{
@@ -68,8 +75,8 @@
 }
 
 .slider > img{
-    width: 800px;
-    height: 550px;
+    width: 720px;
+    height: 554px;
     -webkit-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
     -moz-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
     box-shadow: -7px 4px 43px 7px rgb(0 0 0 / 13%);
