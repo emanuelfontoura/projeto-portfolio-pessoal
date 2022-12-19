@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-.projetos{
+.projetos-container{
     font-family: 'Rajdhani', sans-serif;
+    padding: 50px 120px 120px 120px;
 }
 
 .projetos-titulo{
@@ -9,7 +10,67 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     transition: 1s;
     color: #3D3D3D;
+}
+
+.container-images button img{
+    width: 100px;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider{
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.on{
+    opacity: 1;
+}
+
+.prev-button, .next-button{
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.prev-button img, .next-button img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-container-principal{
+    width: 700px;
+    height: 450px;
+    align-self: center;
+    margin-left: -80px;
+}
+
+.slider > img{
+    width: 800px;
+    height: 550px;
+    -webkit-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
+    -moz-box-shadow: -20px 20px 38px 16px rgba(0,0,0,0.13);
+    box-shadow: -7px 4px 43px 7px rgb(0 0 0 / 13%);
 }

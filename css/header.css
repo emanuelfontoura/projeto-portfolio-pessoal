@@ -5,6 +5,8 @@
 .header{
     font-family: 'Rajdhani', sans-serif;
     z-index: 2;
+    position: sticky;
+    top: 0;
 }
 
 .menu-container{
@@ -58,14 +60,14 @@
     color: black;
 }
 
-.menu-logo{
+.menu-logo a{
     color: #55E7A5;
     font-weight: 600;
     font-size: 3rem;
     position: relative;
 }
 
-.menu-logo::after{
+.menu-logo a::after{
     content: "";
     display: inline-block;
     border-radius: 50%;
