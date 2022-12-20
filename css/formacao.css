@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.form-container{
+    font-family: 'Rajdhani', sans-serif;
+    padding: 50px 120px 120px 120px;
+    background-color: #181818;
+}
+
+.form-titulo{
+    font-size: clamp(2rem, 10vw + 0.1rem, 8rem);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    transition: 1s;
+    color: #B8B8B8;
+}
