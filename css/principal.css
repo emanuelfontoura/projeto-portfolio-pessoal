@@ -344,12 +344,16 @@
     }
 
     div[class|=icon-image]{
-        width: 30px;
+        width: 40px;
         height: 40px;
     }
 
     .icon-titulo{
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .info{
+        display: none;
     }
 }
 
@@ -359,11 +363,11 @@
     }
 
     .card-titulo-principal{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .card-texto-principal{
-        font-size: 1.15rem;
+        font-size: 1.18em;
     }
 
     .card-rodape-principal span{
@@ -371,7 +375,7 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 452px){
     .card-topo-principal{
         display: none;
     }
@@ -383,17 +387,17 @@
     }
 
     .card-titulo-principal{
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 10px 20px;
     }
 
     .card-texto-principal{
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 10px 20px;
     }
 
     .card-rodape-principal span{
-        font-size: 1rem;
+        font-size: 1.09rem;
     }
 
     .card-rodape-principal{
@@ -402,6 +406,20 @@
 
     .card-rodape-principal img{
         width: 45px;
+    }
+}
+
+@media (max-width: 343px){
+    .card-titulo-principal{
+        font-size: 1.2rem;
+    }
+
+    .card-texto-principal{
+        font-size: 0.9rem;
+    }
+
+    .card-rodape-principal{
+        font-size: 0.8rem;
     }
 }
 
