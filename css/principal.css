@@ -355,6 +355,10 @@
     .info{
         display: none;
     }
+
+    .icons>div:hover .icon-titulo{
+        opacity: 1;
+    }
 }
 
 @media (max-width: 550px){
