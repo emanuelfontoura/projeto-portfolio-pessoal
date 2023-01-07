@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.form-container{
+.form{
     font-family: 'Rajdhani', sans-serif;
     padding: 50px 120px 120px 120px;
     background-color: #181818;
@@ -17,4 +17,26 @@
     margin-bottom: 50px;
     transition: 1s;
     color: #B8B8B8;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 80px;
+}
+
+.form-imagem-1{
+    justify-self: right;
+}
+
+.form-imagem-2{
+    justify-self: left;
+}
+
+.form-imagem-1, .form-imagem-2{
+    transition: 0.3s;
+}
+
+.form-imagem-1:hover, .form-imagem-2:hover{
+    transform: scale(1.03);
 }
