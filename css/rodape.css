@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.rodape{
+    padding: 50px 120px 30px 120px;  
+    background-color: #0C0C0C;
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.rodape-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.mensagem{
+    display: flex;
+    height: 70px;
+}
+
+.mensagem > input{
+    border: 1px solid #ffffff;
+    padding: 20px;
+    width: 400px;
+    background-color: #0C0C0C;
+}
+
+.mensagem input::placeholder{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.mensagem input:active{
+    border-radius: none;
+}
+
+.mensagem > a{
+    border: 1px solid #ffffff;
+    border-left: none;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
