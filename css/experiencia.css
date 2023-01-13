@@ -18,8 +18,8 @@
 
 .experiencia-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 80px;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 90px;
 }
 
 .experiencia-imagem-1{
@@ -43,7 +43,7 @@
 
 @media (max-width: 1400px){
     .experiencia{
-        padding: 50px 90px 90px 90px;
+        padding: 50px 90px 50px 90px;
     }
 
     .experiencia-titulo{
@@ -51,7 +51,33 @@
     }
 }
 
+@media (max-width: 1230px){
+    .experiencia{
+        padding: 40px 60px 40px 60px;
+    }
+
+    .experiencia-container{
+        gap: 50px;
+    }
+
+    .experiencia-titulo{
+        margin-bottom: 40px;
+    }
+}
+
 @media (max-width: 937px){
+    .experiencia{
+        padding: 40px 70px 40px 70px;
+    }
+
+    .experiencia-container{
+        gap: 50px;
+    }
+
+    .experiencia-titulo{
+        margin-bottom: 40px;
+    }
+
     .experiencia-imagem-1{
         justify-self: center;
     }
@@ -62,22 +88,78 @@
 
 }
 
-@media (max-width: 500px){
-    .experiencia{
-        padding: 50px 40px;
+@media (max-width: 900px){
+    .experiencia-container{
+        grid-template-columns: 1fr;
+    }
+
+    .experiencia-imagem-1, .experiencia-imagem-2{
+        max-width: 450px;
+    }
+
+    .experiencia-titulo{
+        font-size: 5.4rem;
     }
 }
 
-@media (max-width: 409px){
+@media (max-width: 750px){
     .experiencia{
-        padding: 40px 20px;
-    }
-
-    .experiencia-container{
-        gap: 40px;
+        padding: 30px 60px 30px 60px;
     }
 
     .experiencia-titulo{
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 590px){
+    .experiencia-titulo{
+        font-size: 4.6rem;
+    }
+}
+
+@media (max-width: 510px){
+    .experiencia{
+        padding: 20px 50px 20px 50px;
+    }
+
+    .experiencia-titulo{
+        margin-bottom: 20px;
+    }
+
+    .experiencia-titulo{
+        font-size: 4.2rem;
+    }
+}
+
+@media (max-width: 460px){
+    .experiencia-titulo{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .experiencia-titulo{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 390px){
+    .experiencia{
+        padding: 30px 40px 10px 40px;
+    }
+
+    .experiencia-titulo{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 350px){
+    .experiencia{
+        padding: 20px 40px;
+    }
+
+    .experiencia-titulo{
+        margin-bottom: 20px;
     }
 }
