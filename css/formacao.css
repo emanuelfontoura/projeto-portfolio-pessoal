@@ -22,7 +22,7 @@
 .form-container{
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
-    column-gap: 90px;
+    gap: 80px;
 }
 
 .form-imagem-1{
@@ -44,7 +44,7 @@
 
 @media (max-width: 1400px){
     .form{
-        padding: 50px 90px 50px 90px;
+        padding: 50px 90px 40px 90px;
     }
 
     .form-titulo{
@@ -54,11 +54,11 @@
 
 @media (max-width: 1230px){
     .form{
-        padding: 40px 60px 40px 60px;
+        padding: 40px 60px 10px 60px;
     }
 
     .form-container{
-        column-gap: 50px;
+        gap: 60px;
     }
 
     .form-titulo{
@@ -68,11 +68,11 @@
 
 @media (max-width: 937px){
     .form{
-        padding: 40px 70px 40px 70px;
+        padding: 40px 70px 10px 70px;
     }
 
     .form-container{
-        column-gap: 50px;
+        gap: 50px;
     }
 
     .form-titulo{
@@ -97,44 +97,86 @@
     .form-imagem-1, .form-imagem-2{
         max-width: 450px;
     }
+
+    .form-container{
+        gap: 0px;
+    }
+
+    .form-titulo{
+        font-size: 6rem;
+    }
 }
 
 @media (max-width: 750px){
     .form{
-        padding: 30px 60px 30px 60px;
+        padding: 35px 60px 10px 60px;
     }
 
     .form-titulo{
-        margin-bottom: 30px;
+        margin-bottom: 35px;
+        font-size: 5.65rem;
+    }
+}
+
+@media (max-width: 620px){
+    .form{
+        padding: 35px 60px 10px 60px;
+    }
+
+    .form-titulo{
+        font-size: 4.5rem;
     }
 }
 
 @media (max-width: 510px){
     .form{
-        padding: 20px 50px 20px 50px;
+        padding: 30px 50px 10px 50px;
     }
 
     .form-titulo{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        font-size: 4.2rem;
+    }
+}
+
+@media (max-width: 460px){
+    .form-titulo{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 420px){
+    .form{
+        padding: 25px 50px 10px 50px;
+    }
+
+    .form-titulo{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 400px){
+    .form-titulo{
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 390px){
     .form{
-        padding: 30px 40px 10px 40px;
+        padding: 22px 40px 10px 40px;
     }
 
     .form-titulo{
-        margin-bottom: 30px;
+        margin-bottom: 22px;
     }
 }
 
 @media (max-width: 350px){
     .form{
-        padding: 20px 40px;
+        padding: 20px 30px 10px 30px;
     }
 
     .form-titulo{
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
 }

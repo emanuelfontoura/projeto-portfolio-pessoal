@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
+:root{
+    --tamanho-seta: 50px;
+}
+
 .rodape{
-    padding: 50px 120px 30px 120px;  
+    padding: 50px 120px 15px 120px;  
     background-color: #0C0C0C;
     color: #ffffff;
     font-family: 'Rajdhani', sans-serif;
@@ -24,7 +28,7 @@
 .mensagem > input{
     border: 1px solid #ffffff;
     padding: 20px;
-    width: 480px;
+    width: 580px;
     background-color: #0C0C0C;
     transition: .2s;
     color: #ffffff;
@@ -94,6 +98,38 @@
     font-size: 1.1rem;
 }
 
+.fale-comigo-button{
+    padding: 18px 30px;
+    border-radius: 15px;
+    border: 0;
+    background-color: #3D3D3D;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+}
+
+.fale-comigo-button:hover {
+    letter-spacing: 3px;
+    background-color: #55E7A5;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #55E7A5 0px 5px 25px 0px;
+}
+
+.fale-comigo-button:active {
+    letter-spacing: 3px;
+    background-color: #55E7A5;
+    color: hsl(0, 0%, 100%);
+    transform: translateY(8px);
+    transition: 100ms;
+}
+
 @media (max-width: 900px){
     .mensagem{
         height: 70px;
@@ -112,16 +148,6 @@
     }
 }
 
-@media (max-width: 530px){
-    .tel-icon > span, .local-icon > span{
-        font-size: 1.15rem;
-    }
-
-    .rodape-container{
-        gap: 25px;
-    }
-}
-
 @media (max-width: 620px){
     .mensagem{
         height: 60px;
@@ -132,10 +158,53 @@
     }
 
     .mensagem input::placeholder{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .mensagem > a:hover{
         width: 75px;
+    }
+}
+
+@media (max-width: 573px){
+    .tel-icon > span, .local-icon > span{
+        font-size: 1.4rem;
+    }
+
+    .direitos{
+        font-size: 0.9rem;
+    }
+
+    .rodape-container{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 350px){
+    .fale-comigo-button{
+        width: 190px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 438px){
+    .tel-icon > span, .local-icon > span{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 407px){
+    .tel-icon > span, .local-icon > span{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 383px){
+    .rodape{
+        padding: 40px 80px 10px 80px;
+    }
+
+    .tel-icon > span, .local-icon > span{
+        font-size: 1.1rem;
     }
 }
