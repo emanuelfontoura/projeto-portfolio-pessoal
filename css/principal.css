@@ -226,14 +226,14 @@
     transition: 0.3s;
     width: 70px;
     height: 80px;
-    background-image: url(../images/binarycinza.png);
+    background-image: url(../images/bancoDados.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .icons-container:hover .icon-image-alg{
-    background-image: url(../images/binary.png);
+    background-image: url(../images/bancoDados.svg);
 }
 
 /* FIGMA */

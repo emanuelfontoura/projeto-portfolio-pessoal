@@ -8,15 +8,15 @@ let currentSlider = 0
 button_links.href = links[0].href
 
 function next_image(){
-    if (currentSlider < 5){
+    if (currentSlider < links.length-1){
         currentSlider++
         slider[currentSlider].classList.add('on')
         slider[currentSlider-1].classList.remove('on')
         button_links.href = links[currentSlider].href
-    }else if (currentSlider == 5){
+    }else if (currentSlider == links.length-1){
         currentSlider = 0
         slider[currentSlider].classList.add('on')
-        slider[5].classList.remove('on')
+        slider[links.length-1].classList.remove('on')
         button_links.href = links[currentSlider].href
     }
 }
@@ -28,7 +28,7 @@ function prev_image(){
         slider[currentSlider+1].classList.remove('on')
         button_links.href = links[currentSlider].href
     }else if (currentSlider == 0){
-        currentSlider = 5
+        currentSlider = links.length-1
         slider[currentSlider].classList.add('on')
         slider[0].classList.remove('on')
         button_links.href = links[currentSlider].href
